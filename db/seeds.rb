@@ -5,3 +5,31 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+# pho
+# ramen
+# chicken
+# sushi
+# frenchtoast
+# fish
+# vegetarian
+#
+# american
+# chinese
+# japanese
+# thai
+# mexican
+#
+# booze
+# breakfast
+# lunner
+#
+# expensive
+# cheap
+# fair
+#
+# family
+# hipster
+# upscale
+# hole_wall
