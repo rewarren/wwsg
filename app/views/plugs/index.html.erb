@@ -1,0 +1,13 @@
+<h1>Silvia's Street Cred, <span id="disclaimer"> by someone who is not being paid by Silvia to write nice things.</span></h1>
+
+<h2>
+  <p>Silvia is a collector of knowledge. Restaurants happen to be one category of things she collects. She is a well-traveled foodie, having been to many a place and tried many a dish.  Luckily for the hungry friend, she is always willing to consider and recommend a place suited to their preferences.  I began to think of her quick-thinking mind as an api because, well, that's what has been on my mind lately. Naturally that led me to decide that one could benefit from her experience on the world wide web! so here it is. Each and every restaurant on the list has been graced by Silvia's presence -- it actually is a true list collected and compiled by none other than Silvia herself, I just proded her for a tad bit more tidbits to make the online recommendation experience more awesomer. NOW GO EAT SOME GOOD FOOD! </p>
+
+<p>
+<% @plugs.each do |plug| %>
+<div class="restinfo">
+<h2>
+  <%= link_to plug.restaurant, plug %>
+</h2>
+
+<% end %>

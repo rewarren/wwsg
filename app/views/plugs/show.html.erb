@@ -1,0 +1,30 @@
+
+
+<div class="plugshow">
+<h2>
+  <%= @plug.restaurant %>
+</h2>
+<h3>
+
+  <p> Silvia's favorite dish: <%= @plug.favorite %></p>
+
+    <% if @plug.surprise == "" %>
+    <% else %>
+      <p> and... <%= @plug.surprise %> </p>
+    <% end %>
+
+    <% if @plug.tips == "" %>
+    <% else %>
+      <p> Tip: <%= @plug.tips %> </p>
+    <% end %>
+
+    <p><%= @plug.address %></p>
+
+
+    <% if @plug.url == "" %>
+    <% else %>
+      <p> Tip: <%= @plug.url %> </p>
+    <% end %>
+
+
+<%= link_to "Home", plugs_path %>
