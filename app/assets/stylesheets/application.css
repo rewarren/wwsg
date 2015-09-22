@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ff0f5;
+}
+
+nav {
+  background-color: #CDE559;
+  height: 2em;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.restaurant {
+  margin: 0 1em;
+  padding: 2em;
+  background-color: #7CA8C8;
+  columns: 5 180px;
+  column-gap: 2em;
+  -webkit-columns: 5 180px;
+  -moz-columns: 5 180px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+}
+
+.eachRestaurant {
+  font-family: Georgia;
+  font-size: 16px;
+}
+
+a {
+  text-decoration:none;
+  color: #fef;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.heading {
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2em;
+}
