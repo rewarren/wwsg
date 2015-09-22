@@ -6,7 +6,7 @@ class CreatePlugs < ActiveRecord::Migration
       t.string :favorite
       t.string :surprise
       t.string :tips
-      t.string :image_url
+      t.string :url
     end
   end
 end
