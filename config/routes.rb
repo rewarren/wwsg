@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'plugs#index'
 
   resources :plugs do
+    resources :tags
   end
 
   resources :tags do

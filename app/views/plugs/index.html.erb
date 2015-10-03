@@ -1,5 +1,3 @@
-
-<p class="heading">Silvia's Arsenal</p>
 <div class="restaurant">
   <% @plugs.each do |plug| %>
     <div class="eachRestaurant">
@@ -8,40 +6,12 @@
   <% end %>
 </div>
 
-<!--
-<p>or search by tags! </p>
-<p>
+<div class="heading">Get Your Fix</div>
+
+<div class="tagbox">
   <% @tags.each do |tag| %>
   <div class="tagnames">
-  <h2>
-    <%= link_to tag.name, tag %>
-  </h2>
+    <%= link_to tag.name, tag_path(tag) %>
+  </div>
   <% end %>
-</p> -->
-
-<div class="experience">
-  <p class="heading">The experience</p>
-
-  <p class="tagdesign">
-
-  <% if @tags.name == ["Pho", "Ramen", "Chicken", "Sushi", "French Toast", "Fish", "Vegetarian"] %>
-    <p>  <%= collection_check_boxes(:plug, :tag_ids, Tag.all, :id, :name) %> </p>
-  <% end %>
-
-  <% if @tags.name == ["American", "Chinese", "Japanese", "Thai", "Mexican"] %>
-    <p>  <%= collection_check_boxes(:plug, :tag_ids, Tag.all, :id, :name) %> </p>
-  <% end %>
-
-  <% if @tags.name == ["Booze", "Breakfast", "Lunner"] %>
-    <p>  <%= collection_check_boxes(:plug, :tag_ids, Tag.all, :id, :name) %> </p>
-  <% end %>
-
-  <% if @tags.name == ["Expensive", "Cheap", "Fair Prices"] %>
-    <p>  <%= collection_check_boxes(:plug, :tag_ids, Tag.all, :id, :name) %>    </p>
-  <% end %>
-
-  <% if @tags.name == ["Family", "Hipster", "Upscale", "Hole in the wall"] %>
-    <p>  <%= collection_check_boxes(:plug, :tag_ids, Tag.all, :id, :name) %>   </p>
-    <% end %>
-  </p>
 </div>

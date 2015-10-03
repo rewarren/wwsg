@@ -7,7 +7,7 @@ class TagsController < ApplicationController
 
   def show
     @tag = Tag.find(params[:id])
-    @plug = Plug.find(params[:id])
+    @plugs = @tag.plugs
   end
 
 end

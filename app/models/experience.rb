@@ -1,4 +1,5 @@
-class Experiience < ActiveRecord::Base
+class Experience < ActiveRecord::Base
   belongs_to :plug
   belongs_to :tag
+
 end

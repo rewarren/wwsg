@@ -1,30 +1,42 @@
-
-
 <div class="plugshow">
-<h2>
+
+<h2 id="restaurant">
   <%= @plug.restaurant %>
 </h2>
+
 <h3>
+<p class="plugTags">
+<% @tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %> |
+<% end %>
+</p>
 
-  <p> Silvia's favorite dish: <%= @plug.favorite %></p>
+<p class="plugSection"> Silvia's favorite dish</p>
+<p class="plugInfo"><%= @plug.favorite %></p>
 
-    <% if @plug.surprise == "" %>
-    <% else %>
-      <p> and... <%= @plug.surprise %> </p>
-    <% end %>
+  <% if @plug.surprise == "" %>
+  <% else %>
+    <p class="plugSection">and...</p>
+    <p class="plugInfo"><%= @plug.surprise %> </p>
+  <% end %>
 
-    <% if @plug.tips == "" %>
-    <% else %>
-      <p> Tip: <%= @plug.tips %> </p>
-    <% end %>
+  <% if @plug.tips == "" %>
+  <% else %>
+    <p class="plugSection">Tip</p>
+    <p class="plugInfo"> <%= @plug.tips %> </p>
+  <% end %>
 
-    <p><%= @plug.address %></p>
-
-
-    <% if @plug.url == "" %>
-    <% else %>
-      <p> Tip: <%= @plug.url %> </p>
-    <% end %>
+  <p class="plugSection">Location</p>
+  <p class="plugInfo"><%= @plug.address %></p>
 
 
-<%= link_to "Home", plugs_path %>
+  <% if @plug.url == "" %>
+  <% else %>
+    <p class="plugSection">Website</p>
+    <p class="plugInfo"><%= @plug.url %> </p>
+  <% end %>
+
+</h3>
+  <p class="back"><%= link_to "Back", plugs_path %></p>
+
+</div>

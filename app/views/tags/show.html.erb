@@ -1,4 +1,13 @@
-<h1 class="tagResults">Results for your search.</h1>
+<div class="heading">You want <%= @tag.name %>! <span class="back"></div>
+<div class="tagshow">
+  <% @plugs.each do |plug| %>
+    <p class="tagPlugs">
+      <%= link_to plug.restaurant, plug %>
+    </p>
+  <% end %>
 
-<p>
-  
+  <p class="back">
+    <%= link_to "Home", plugs_path %>
+  </p>
+
+</div>
