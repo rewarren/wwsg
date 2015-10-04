@@ -1,40 +1,35 @@
 <div class="plugshow">
+  <h2 id="restaurant">
+    <%= @plug.restaurant %>
+  </h2>
+  <h3>
+    <p class="plugTags">
+      <%= @plug.tag_list %>
+    </p>
 
-<h2 id="restaurant">
-  <%= @plug.restaurant %>
-</h2>
+    <p class="plugSection"> Silvia's favorite dish</p>
+    <p class="plugInfo"><%= @plug.favorite %></p>
 
-<h3>
-<p class="plugTags">
-<%= @plug.tag_list %>
-</p>
+    <% if @plug.surprise == "" %>
+    <% else %>
+      <p class="plugSection">and...</p>
+      <p class="plugInfo"><%= @plug.surprise %> </p>
+    <% end %>
 
-<p class="plugSection"> Silvia's favorite dish</p>
-<p class="plugInfo"><%= @plug.favorite %></p>
+    <% if @plug.tips == "" %>
+    <% else %>
+      <p class="plugSection">Tip</p>
+      <p class="plugInfo"> <%= @plug.tips %> </p>
+    <% end %>
 
-  <% if @plug.surprise == "" %>
-  <% else %>
-    <p class="plugSection">and...</p>
-    <p class="plugInfo"><%= @plug.surprise %> </p>
-  <% end %>
+    <p class="plugSection">Location</p>
+    <p class="plugInfo"><%= @plug.address %></p>
 
-  <% if @plug.tips == "" %>
-  <% else %>
-    <p class="plugSection">Tip</p>
-    <p class="plugInfo"> <%= @plug.tips %> </p>
-  <% end %>
-
-  <p class="plugSection">Location</p>
-  <p class="plugInfo"><%= @plug.address %></p>
-
-
-  <% if @plug.url == "" %>
-  <% else %>
-    <p class="plugSection">Website</p>
-    <p class="plugInfo"><%= @plug.url %> </p>
-  <% end %>
-
-</h3>
-  <p class="back"><%= link_to "Back", plugs_path %></p>
-
+    <% if @plug.url == "" %>
+    <% else %>
+      <p class="plugSection">Website</p>
+      <p class="plugInfo"><%= @plug.url %> </p>
+    <% end %>
+  </h3>
+<p class="back"><%= link_to "Home", plugs_path %></p>
 </div>
