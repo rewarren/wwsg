@@ -1,47 +1,6 @@
 Plug.destroy_all
 Tag.destroy_all
 
-
-# american = Tag.create(name: "American")
-# asian = Tag.create(name: "Asian-Fusion")
-# bbq = Tag.create(name: "BBQ")
-# booze = Tag.create(name: "Booze")
-# breakfast = Tag.create(name: "Breakfast")
-# brunch = Tag.create(name: "Brunch")
-# burgers = Tag.create(name: "Burgers")
-# cafe = Tag.create(name: "Cafe")
-# cajun = Tag.create(name: 'Cajun"
-# chicken = Tag.create(name: "Chicken")
-# chinese = Tag.create(name: "Chinese")
-# dinner = Tag.create(name: "Dinner")
-# fast = Tag.create(name: "Fast Food")
-# french = Tag.create(name: "French")
-# indian = Tag.create(name: "Indian")
-# italian = Tag.create(name: "Italian")
-# japanese = Tag.create(name: "Japanese")
-# korean = Tag.create(name: "Korean")
-# lunch = Tag.create(name: "Lunch")
-# mexican = Tag.create(name: "Mexican")
-# milkshakes = Tag.create(name: "Milkshakes")
-# music = Tag.create(name: "Music")
-# pho = Tag.create(name: "Pho")
-# ramen = Tag.create(name: "Ramen")
-# russian = Tag.create(name: 'Russian"
-# seafood = Tag.create(name: "Seafood")
-# soulfood = Tag.create(name: "Soulfood")
-# spanish = Tag.create(name: "Spanish-Inspired")
-# steakhouse = Tag.create(name: "Steakhouse")
-# sushi = Tag.create(name: "Sushi")
-# sweets = Tag.create(name: "Sweets")
-# tapas = Tag.create(name: "Tapas")
-# tea = Tag.create(name: "Tea")
-# thai = Tag.create(name: "Thai")
-# vegetarian = Tag.create(name: "Vegetarian")
-# vietnamese = Tag.create(name: "Vietnamese")
-# wine = Tag.create(name: "Wine")
-# barbar = Tag.create(name: "Bar for Drinks")
-# barrestaurant = Tag.create(name: "Restaurant and Bar")
-#
 Plug.create(
    restaurant: "Baked & Wired",
    address: "",
@@ -65,14 +24,14 @@ Plug.create(
 Plug.create(
    restaurant: "Blind Dog Cafe at Darnell's",
    address: "",
-   favorite: "croissant breakfast sandwiches",
+   favorite: "Croissant breakfast sandwiches",
    surprise: "",
-   tips: "extremely small, but the atmosphere is charming and the food is good. not a lot of seating, and there aren't many outlets.",
+   tips: "Extremely small, but the atmosphere is charming and the food is good. not a lot of seating, and there aren't many outlets.",
    url: "",
    tag_list: "cafe"
    )
 
-teacellar = Plug.create(
+Plug.create(
    restaurant: "Tea Cellar",
    address: "",
    favorite: "I recommend their Jasmine tea.",
@@ -82,157 +41,157 @@ teacellar = Plug.create(
    tag_list: "sweets,vegetarian,tea"
    )
 
-amsterdamfalafelshop = Plug.create(
+Plug.create(
    restaurant: "Amsterdam Falafelshop",
    address: "",
    favorite: "Falafel Combo - comes with fries and a drink",
    surprise: "",
    tips: "It's most excellent. Great place for lunch, dinner and drunk food.",
    url: "",
-   tags_list: "sweets"
+   tag_list: "sweets"
    )
 
-barcelonawinebar = Plug.create(
+Plug.create(
    restaurant: "Barcelona Wine Bar & Restaurant",
    address: "1622 14th Street NW, Washington, DC 20009",
    favorite: "No favorite",
    surprise: "",
    tips: "It gets crowded quite easily.  Sometimes they cook outside, and it can get smokey.  Your clothes may end up smelling like smoke.",
    url: "",
-   tag_list:  "wine"
+   tag_list: "wine"
    )
 
-bayou = Plug.create(
+Plug.create(
    restaurant: "Bayou",
    address: "2519 Pennsylvania Ave",
    favorite: "Cocktail - Bayou Grenade.  For food I liked the cajun spiced organic salmon.",
    surprise: "",
    tips: "They don't take reservations so it's first come, first served.",
    url: "www.bayouonpenn.com",
-   tag_list: "music', 'cajun"
+   tag_list: "music,cajun"
    )
 
-benschilibowl = Plug.create(
+Plug.create(
    restaurant: "Ben's Chili Bowl",
    address: "",
    favorite: "Chili on the fries! You can get that with cheese and onions as well. So good, it's really good.",
    surprise: "",
    tips: "Open for most of the day and night, closes at 3am. The chili is fantastic, and has enough spice for mild-spice lovers, and for people that like spicy food.  If you have a party of five or more, you can get waited on in the back instead of standing in the front. Ben's Chili Bowl is historic to DC.",
    url: "",
-   tag_list:  "american"
+   tag_list: "american"
    )
 
-churchkey = Plug.create(
+Plug.create(
    restaurant: "Church Key",
    address: "1337 14th Street, NW, Washington, DC 20005",
    favorite: "the duck dish. It's quite tasty. Has a nice balance of duck fat, but not too fatty.",
    surprise: "a side dish: the carmelized brussel sprouts. It's not too sweet, but has a slight sweetness. the mixture of the sweetness/saltiness is so good.",
    tips: "weekends are busy, reservations on the weekends. there's a bar upstairs that's a bit more informal so you can go up, get drinks and eat.",
    url: "http://churchkeydc.com",
-   tag_list:  "barrestaurant"
+   tag_list: "Restaurant and Bar"
    )
 
-bistrotducoin = Plug.create(
+Plug.create(
    restaurant: "Bistrot Du Coin",
    address: "1738 Connecticut Avenue, NW, Washington, DC 20009",
    favorite: "a salmon dish with pilaf rice and salad greens",
    surprise: "",
    tips: "gets crowded at night. reservations are recommended! great for large parties bc the tables are flexible to adjust. it's decent french food.",
    url: "http://www.bistrotducoin.com",
-   tag_list:  "french"
+   tag_list: "french"
    )
 
-blueducktavern = Plug.create(
+Plug.create(
    restaurant: "Blue Duck Tavern",
    address: "1201 24th St NW, Washington, DC 20037",
    favorite: "It was a special - scallops with pickled radish and some asian vegetables. Really good, really good, really good, so tasty.",
    surprise: "The apple pie. It's huge. You could eat it yourself if you're hungry, but it's best for two people to share.",
    tips: "expensive but so good.  Most of the dishes are so good but I would recommend the specials when they have them because they are unique.  They prefer reservations! Even if it's lunch hour.  You can reserve on their website.",
    url: "www.blueducktavern.com",
-   tag_list: "american', 'modern"
+   tag_list: "american,modern"
    )
 
-boqueria = Plug.create(
+Plug.create(
    restaurant: "Boqueria",
    address: "1837 M St NW, Washington, DC 20036",
    favorite: "The seafood paella with squid ink.",
    surprise: "The bill.",
    tips: "Tapas are good. It's first come, first serve at the bar, but reservations are recommended for the seating area.",
    url: "www.boqueriarestaurant.com",
-   tag_list: "tapas', 'spanish', 'seafood"
+   tag_list: "tapas,spanish,seafood"
    )
 
-busboysandpoets = Plug.create(
+Plug.create(
    restaurant: "Busboys and Poets",
    address: "",
    favorite: "",
    surprise: "the bookstore",
    tips: "extremely vegan friendly, but the non-vegan dishes are tasty too!",
    url: "",
-   tag_list:  "vegan"
+   tag_list: "vegan"
    )
 
-circadupont = Plug.create(
+Plug.create(
    restaurant: "Circa at Dupont",
    address: "",
    favorite: "Scallops and rice dish. THey were decently cooked",
    surprise: "",
    tips: "they have a variety of seating; bar, tall tables, and regular seating. I've never seen it too crowded.",
    url: "",
-   tag_list:  "seafood"
+   tag_list: "seafood"
    )
 
-commissary = Plug.create(
+Plug.create(
    restaurant: "Commissary",
    address: "",
    favorite: "The breakfast dishes.",
    surprise: "The potato pancakes.",
    tips: "It's a nice large space with a lot of seating.  Good for decently sized crowds. Decent selection of beer at the bar. Free wifi! Portions are nicely sized",
    url: "",
-  tag_list: "breakfast', 'brunch"
+  tag_list: "breakfast,brunch"
    )
 
-daikaya = Plug.create(
+Plug.create(
     restaurant: "Daikaya Ramen",
     address: "705 6th St NW, Washington, DC 20001",
     favorite: "Mugi-Miso Ramen",
     surprise: "There's a restaurant above it by the same owners and they sometimes have simple ramen dishes up there.  Less of a wait, more variety of japanese cuisine.",
     tips: "be prepared to wait! not good for large parties.",
     url: "",
-    tag_list: "ramen', 'japanese"
+    tag_list: "ramen,japanese"
     )
 
-districtcommons = Plug.create(
+Plug.create(
    restaurant: "District Commons",
    address: "",
    favorite: "Pretzel Baguette",
    surprise: "Pretzel Baguette!",
    tips: "PRETZEL BAGUETTE",
    url: "",
-   tag_list:  "american"
+   tag_list: "american"
    )
 
-eatonville = Plug.create(
+Plug.create(
    restaurant: "Eatonville",
    address: "2121 14th Street NW, Washington, DC 20009",
    favorite: "No favorite, but I do like the brunch.",
    surprise: "",
    tips: "It's good for all meals of the day, and it get's crowded easily.",
    url: "www.eatonvillerestaurant.com",
-   tag_list: "cajun', 'soulfood"
+   tag_list: "cajun,soulfood"
    )
 
-filomena = Plug.create(
+Plug.create(
    restaurant: "Filomena Ristorante",
    address: "1063 Wisconsin Ave NW, Washington, DC 20007",
    favorite: "Pasta dishes",
    surprise: "You can watch one of the pasta makers make pasta from scratch through the window or inside.",
    tips: "Since the pasta is fresh, it's good. It's an old italian restaurant that's been there for a long time. ",
    url: "www.filomena.com",
-   tag_list:  "italian"
+   tag_list: "italian"
    )
 
-fogo = Plug.create(
+Plug.create(
    restaurant: "Fogo de Chão Churrascaria",
    address: "1101 Pennsylvania Ave NW, Washington, DC 20004",
    favorite: "",
@@ -242,37 +201,37 @@ fogo = Plug.create(
    tag_list:  "steakhouse"
    )
 
-foundingfarmers = Plug.create(
+Plug.create(
     restaurant: "Founding Farmers",
     address: "1924 Pennsylvania Ave. NW, Washington, DC 20006",
     favorite: "Chicken Waffles",
     surprise: "Jefferson Donut",
     tips: "Ask to go upstairs because it's quieter.  Reservations, reservations, reservations.",
     url: "",
-    tag_list: "american', 'brunch"'"
+    tag_list: "american,brunch"
     )
 
-graffiato = Plug.create(
+Plug.create(
   restaurant: "Graffiato",
   address: "",
   favorite: "For brunch - french toast and waffles.",
   surprise: "The breakfast pizza. It's decently sized to share between three people (if you're sharing other things as well).",
   tips: "I love going there for brunch, but they have really good italian dishes, tapas style.",
   url: "",
-  tag_list: "tapas', 'italian', 'brunch"
+  tag_list: "tapas,italian,brunch"
   )
 
-thehamilton = Plug.create(
+Plug.create(
   restaurant: "The Hamilton",
   address: "",
   favorite: "It's not there anymore, but if they have it I recommend it. Grilled Fried Calamari. I miss it! It had lima beans, celerly, spices, among other things. Really good.",
   surprise: "Warm Almond Fudge Brownie",
   tips: "It's also a music venue -- go here before a show. There's a big bar in the front and a lot of seating in the back. I think the best are the booths.",
   url: "",
-  tag_list: "music', 'booze', 'american"
+  tag_list: "music,booze,american"
   )
 
-jaleo = Plug.create(
+Plug.create(
   restaurant: "Jaleo",
   address: "",
   favorite: "Octopus with the squid ink sauce.",
@@ -282,7 +241,7 @@ jaleo = Plug.create(
   tag_list: "tapas"
   )
 
-marivanna = Plug.create(
+Plug.create(
    restaurant: "Mari Vanna",
    address: "",
    favorite: "Beef or Chicken Stroganoff with Buckwheat Noodles",
@@ -292,7 +251,7 @@ marivanna = Plug.create(
    tag_list:  "russian"
    )
 
-matchbox = Plug.create(
+Plug.create(
    restaurant: "Matchbox",
    address: "",
    favorite: "mini hamburgers with fried string onion rings. it's an appetizer",
@@ -303,15 +262,15 @@ matchbox = Plug.create(
    )
 
 # logantavern = Plug.create(
-#    restaurant: "Logan Tavern",
-#    address: "",
-#    favorite: "",
-#    surprise: "",
-#    tips: "",
-#    url: ""
-#    )
+#     restaurant: "Logan Tavern",
+#     address: "",
+#     favorite: "",
+#     surprise: "",
+#     tips: "",
+#     url: ""
+#     )
 
-mandu = Plug.create(
+Plug.create(
    restaurant: "Mandu",
    address: "1805 18th Street, NW, Washington, DC 20009",
    favorite: "Dolsot Bibimbap because it has beef and a lot of vegetables. When you get it, let it cook for a few minutes because the best part is when the rice gets crispy.",
@@ -321,17 +280,17 @@ mandu = Plug.create(
    tag_list:  "korean"
    )
 
-oldebbitt = Plug.create(
+Plug.create(
    restaurant: "Old Ebbitt Grill",
    address: "675 15th St NW, Washington, DC 20005",
    favorite: "Crab Cake",
    surprise: "",
-   tips: "it's a nice Asmerican bar place, it has that very old fashioned traditional architecture inside.  It can get really crowded. Decently sized portions. Mussels are popular here",
+   tips: "It's a nice American bar, it has that very old fashioned traditional architecture inside.  It can get really crowded. Decently sized portions. Mussels are popular here",
    url: "www.ebbitt.com",
    tag_list:  "american"
    )
 
-pearldive = Plug.create(
+Plug.create(
    restaurant: "Pearl Dive Oyster Palace",
    address: "1612 14th St NW, Washington, DC 20009",
    favorite: "Oysters!",
@@ -341,7 +300,7 @@ pearldive = Plug.create(
    tag_list:  "seafood"
    )
 
-satelliteroom = Plug.create(
+Plug.create(
     restaurant: "Satellite Room",
     address: "2047 9th St NW, Washington, DC 20001",
     favorite: "tater tots and side dishes",
@@ -351,18 +310,18 @@ satelliteroom = Plug.create(
     tag_list: "booze,sweets,american,music,milkshakes"
     )
 
-sei = Plug.create(
+Plug.create(
     restaurant: "Sei Restaurant & Lounge",
     address: "444 7th St NW, Washington, DC 20004",
     favorite: "Fish and Chips Sushi and the Chili and Seabass",
     surprise: "",
-    tips: "it's modern and expensive. Bring money.",
+    tips: "It is modern and expensive. Bring money.",
     url: "www.seirestaurant.com",
     tag_list: "japanese,sushi"
     )
 
 
-shakeshack18nw= Plug.create(
+Plug.create(
    restaurant: "Shake Shack (18th St NW)",
    address: "1216 18th Street NW, Washington, DC 20036",
    favorite: "French Fries. add some salt.",
@@ -372,7 +331,7 @@ shakeshack18nw= Plug.create(
    tag_list:  "burgers"
    )
 
-shakeshackse = Plug.create(
+Plug.create(
   restaurant: "Shake Shack (S Capitol St SE)",
   address: "1500 S Capitol St SE, Washington, DC 20003",
   favorite: "French Fries. add some salt.",
@@ -382,7 +341,7 @@ shakeshackse = Plug.create(
   tag_list: "burgers"
   )
 
-shakeshackfnw = Plug.create(
+Plug.create(
   restaurant: "Shake Shack (F St NW)",
   address: "800 F St NW, Washington, DC 20004",
   favorite: "French Fries. add some salt.",
@@ -392,7 +351,7 @@ shakeshackfnw = Plug.create(
   tag_list: "burgers"
   )
 
-stickyrice = Plug.create(
+Plug.create(
    restaurant: "Sticky Rice",
    address: "1224 H St NE, Washington, DC 20002",
    favorite: "None but I love their dessert.",
@@ -402,7 +361,7 @@ stickyrice = Plug.create(
    tag_list: "asian,sweets"
    )
 
-teaism = Plug.create(
+Plug.create(
    restaurant: "Teaism",
    address: "400 8th St NW, Washington, DC 20004",
    favorite: "Udon Noodle with Chicken",
@@ -412,17 +371,17 @@ teaism = Plug.create(
    tag_list: "seafood,vegetarian,vegan"
    )
 
-tedsbulletin = Plug.create(
+Plug.create(
    restaurant: "Ted's Bulletin",
    address: "505 8th St SE, Washington, DC 20003",
    favorite: "Oh my gosh, the poptarts.",
    surprise: "The key lime poptart when they have it in season. It's so good.",
-   tips: "Get the poptarts. This is the original location. There's usually a long wait during brunch. If you actually want a meal, I recommend the Big Mark Breakfast, because it comes with a poptart. You can have your poptart heated up for you, too. They serve breakfast all day.  They also have boozy milkshakes.",
+   tips: "Get the poptarts. This is the original location. There is usually a long wait during brunch. If you actually want a meal, I recommend the Big Mark Breakfast, because it comes with a poptart. You can have your poptart heated up for you, too. They serve breakfast all day.  They also have boozy milkshakes.",
    url: "www.tedsbulletincapitolhill.com",
-   tag_list: "burgers,american,barrestaurant,booze,milkshakes"
+   tag_list: "burgers,american,Restaurant and Bar,booze,milkshakes"
    )
 
-thaixing = Plug.create(
+Plug.create(
    restaurant: "Thai X-ing",
    address: "515 Florida Ave NW, Washington, DC 20001",
    favorite: "",
@@ -432,7 +391,7 @@ thaixing = Plug.create(
    tag_list: "thai,vegan,vegetarian"
    )
 
-thediner = Plug.create(
+Plug.create(
    restaurant: "The Diner",
    address: "2453 18th St NW, Washington, DC 20009",
    favorite: "The Croque and Dagger",
@@ -442,7 +401,7 @@ thediner = Plug.create(
    tag_list: "diner,american,brunch,milkshakes"
    )
 
-thepig = Plug.create(
+Plug.create(
     restaurant: "The Pig",
     address: "1320 14th St NW, Washington, DC 20005",
     favorite: "The Pork Shank",
@@ -452,7 +411,7 @@ thepig = Plug.create(
     tag_list: "american,bbq"
     )
 
-toki = Plug.create(
+Plug.create(
     restaurant: "Toki Underground",
     address: "1234 H Street NE, Washington, DC 20002",
     favorite: "Miso Ramen, but hte Curry Ramen is good too. The potstickers are good, also.",
@@ -462,7 +421,7 @@ toki = Plug.create(
     tag_list: "ramen,japanese,asian"
     )
 
-tryst = Plug.create(
+Plug.create(
    restaurant: "Tryst",
    address: "2459 18th St NW, Washington, DC 20009",
    favorite: "Vegan Carrot Cake",
