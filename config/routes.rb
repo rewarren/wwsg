@@ -1,14 +1,7 @@
 Rails.application.routes.draw do
+  get 'tags/:tag', to: 'tags#show', as: "tag"
+  resources :plugs
   root to: 'plugs#index'
-
-  resources :plugs do
-    resources :tags
-  end
-
-  resources :tags do
-    resources :plugs
-  end
-
 end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

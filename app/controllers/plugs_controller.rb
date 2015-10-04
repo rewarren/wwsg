@@ -1,14 +1,16 @@
 class PlugsController < ApplicationController
 
   def index
-    @plugs = Plug.all
-    @tags = Tag.all
+    if params[:tag]
+      @plugs = Plug.tagged_with(params[:tag])
+    else
+      @plugs = Plug.all
+      @tags = Tag.all
+    end
   end
 
   def show
     @plug = Plug.find(params[:id])
-    @tags = @plug.tags
-
   end
 
 end

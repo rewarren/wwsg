@@ -6,8 +6,8 @@ class TagsController < ApplicationController
   end
 
   def show
-    @tag = Tag.find(params[:id])
-    @plugs = @tag.plugs
+    @plugs = Plug.tagged_with(params[:tag])
+    @tag = params[:tag]
   end
 
 end

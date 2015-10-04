@@ -1,74 +1,75 @@
 Plug.destroy_all
 Tag.destroy_all
 
-american = Tag.create(name: "American")
-asian = Tag.create(name: "Asian-Fusion")
-bbq = Tag.create(name: "BBQ")
-booze = Tag.create(name: "Booze")
-breakfast = Tag.create(name: "Breakfast")
-brunch = Tag.create(name: "Brunch")
-burgers = Tag.create(name: "Burgers")
-cafe = Tag.create(name: "Cafe")
-cajun = Tag.create(name: 'Cajun')
-chicken = Tag.create(name: "Chicken")
-chinese = Tag.create(name: "Chinese")
-dinner = Tag.create(name: "Dinner")
-fast = Tag.create(name: "Fast Food")
-french = Tag.create(name: "French")
-indian = Tag.create(name: "Indian")
-italian = Tag.create(name: "Italian")
-japanese = Tag.create(name: "Japanese")
-korean = Tag.create(name: "Korean")
-lunch = Tag.create(name: "Lunch")
-mexican = Tag.create(name: "Mexican")
-milkshakes = Tag.create(name: "Milkshakes")
-music = Tag.create(name: "Music")
-pho = Tag.create(name: "Pho")
-ramen = Tag.create(name: "Ramen")
-russian = Tag.create(name: 'Russian')
-seafood = Tag.create(name: "Seafood")
-soulfood = Tag.create(name: "Soulfood")
-spanish = Tag.create(name: "Spanish-Inspired")
-steakhouse = Tag.create(name: "Steakhouse")
-sushi = Tag.create(name: "Sushi")
-sweets = Tag.create(name: "Sweets")
-tapas = Tag.create(name: "Tapas")
-tea = Tag.create(name: "Tea")
-thai = Tag.create(name: "Thai")
-vegetarian = Tag.create(name: "Vegetarian")
-vietnamese = Tag.create(name: "Vietnamese")
-wine = Tag.create(name: "Wine")
-barbar = Tag.create(name: "Bar for Drinks")
-barrestaurant = Tag.create(name: "Restaurant and Bar")
 
-bakedandwired = Plug.create(
+# american = Tag.create(name: "American")
+# asian = Tag.create(name: "Asian-Fusion")
+# bbq = Tag.create(name: "BBQ")
+# booze = Tag.create(name: "Booze")
+# breakfast = Tag.create(name: "Breakfast")
+# brunch = Tag.create(name: "Brunch")
+# burgers = Tag.create(name: "Burgers")
+# cafe = Tag.create(name: "Cafe")
+# cajun = Tag.create(name: 'Cajun"
+# chicken = Tag.create(name: "Chicken")
+# chinese = Tag.create(name: "Chinese")
+# dinner = Tag.create(name: "Dinner")
+# fast = Tag.create(name: "Fast Food")
+# french = Tag.create(name: "French")
+# indian = Tag.create(name: "Indian")
+# italian = Tag.create(name: "Italian")
+# japanese = Tag.create(name: "Japanese")
+# korean = Tag.create(name: "Korean")
+# lunch = Tag.create(name: "Lunch")
+# mexican = Tag.create(name: "Mexican")
+# milkshakes = Tag.create(name: "Milkshakes")
+# music = Tag.create(name: "Music")
+# pho = Tag.create(name: "Pho")
+# ramen = Tag.create(name: "Ramen")
+# russian = Tag.create(name: 'Russian"
+# seafood = Tag.create(name: "Seafood")
+# soulfood = Tag.create(name: "Soulfood")
+# spanish = Tag.create(name: "Spanish-Inspired")
+# steakhouse = Tag.create(name: "Steakhouse")
+# sushi = Tag.create(name: "Sushi")
+# sweets = Tag.create(name: "Sweets")
+# tapas = Tag.create(name: "Tapas")
+# tea = Tag.create(name: "Tea")
+# thai = Tag.create(name: "Thai")
+# vegetarian = Tag.create(name: "Vegetarian")
+# vietnamese = Tag.create(name: "Vietnamese")
+# wine = Tag.create(name: "Wine")
+# barbar = Tag.create(name: "Bar for Drinks")
+# barrestaurant = Tag.create(name: "Restaurant and Bar")
+#
+Plug.create(
    restaurant: "Baked & Wired",
    address: "",
    favorite: "get a cupcake",
    surprise: "",
    tips: "extremely crowded and loud so be flexible bc people ordering on both sides of the restaurant. cupcakes on the left, tea and coffee on the right.",
    url: "",
-   tags: Tag.where(name: ['sweets', 'tea', 'cafe'])
+   tag_list: "sweets,tea,cafe"
    )
 
-cafebonaparte = Plug.create(
+Plug.create(
    restaurant: "Cafe Bonaparte",
    address: "",
    favorite: "Nutella Crepe - simple, not sweet",
    surprise: "",
    tips: "nice, calm environment in there. it's a nice place if you want to spend time with a friend and have a conversation. Not too loud.",
    url: "",
-   tags: Tag.where(name: 'cafe')
+   tag_list: "cafe"
    )
 
-blinddog = Plug.create(
+Plug.create(
    restaurant: "Blind Dog Cafe at Darnell's",
    address: "",
    favorite: "croissant breakfast sandwiches",
    surprise: "",
    tips: "extremely small, but the atmosphere is charming and the food is good. not a lot of seating, and there aren't many outlets.",
    url: "",
-   tags: Tag.where(name: 'cafe')
+   tag_list: "cafe"
    )
 
 teacellar = Plug.create(
@@ -78,7 +79,7 @@ teacellar = Plug.create(
    surprise: "",
    tips: "if you want to get the tea and dessert buffet (only sweets- really cool!) that's only open on the weekends. reservations are recommended.  the weekdays have the same tea menu but limited sweets menu. and the tea prices vary greatly.",
    url: "parkwashington.hyatt.com",
-   tags: Tag.where(name: ['sweets', 'vegetarian', 'tea'])
+   tag_list: "sweets,vegetarian,tea"
    )
 
 amsterdamfalafelshop = Plug.create(
@@ -88,7 +89,7 @@ amsterdamfalafelshop = Plug.create(
    surprise: "",
    tips: "It's most excellent. Great place for lunch, dinner and drunk food.",
    url: "",
-   tags: Tag.where(name: 'sweets')
+   tags_list: "sweets"
    )
 
 barcelonawinebar = Plug.create(
@@ -98,7 +99,7 @@ barcelonawinebar = Plug.create(
    surprise: "",
    tips: "It gets crowded quite easily.  Sometimes they cook outside, and it can get smokey.  Your clothes may end up smelling like smoke.",
    url: "",
-   tags: Tag.where(name: 'wine')
+   tag_list:  "wine"
    )
 
 bayou = Plug.create(
@@ -108,7 +109,7 @@ bayou = Plug.create(
    surprise: "",
    tips: "They don't take reservations so it's first come, first served.",
    url: "www.bayouonpenn.com",
-   tags: Tag.where(name: ['music', 'cajun'])
+   tag_list: "music', 'cajun"
    )
 
 benschilibowl = Plug.create(
@@ -118,7 +119,7 @@ benschilibowl = Plug.create(
    surprise: "",
    tips: "Open for most of the day and night, closes at 3am. The chili is fantastic, and has enough spice for mild-spice lovers, and for people that like spicy food.  If you have a party of five or more, you can get waited on in the back instead of standing in the front. Ben's Chili Bowl is historic to DC.",
    url: "",
-   tags: Tag.where(name: 'american')
+   tag_list:  "american"
    )
 
 churchkey = Plug.create(
@@ -128,7 +129,7 @@ churchkey = Plug.create(
    surprise: "a side dish: the carmelized brussel sprouts. It's not too sweet, but has a slight sweetness. the mixture of the sweetness/saltiness is so good.",
    tips: "weekends are busy, reservations on the weekends. there's a bar upstairs that's a bit more informal so you can go up, get drinks and eat.",
    url: "http://churchkeydc.com",
-   tags: Tag.where(name: 'barrestaurant')
+   tag_list:  "barrestaurant"
    )
 
 bistrotducoin = Plug.create(
@@ -138,7 +139,7 @@ bistrotducoin = Plug.create(
    surprise: "",
    tips: "gets crowded at night. reservations are recommended! great for large parties bc the tables are flexible to adjust. it's decent french food.",
    url: "http://www.bistrotducoin.com",
-   tags: Tag.where(name: 'french')
+   tag_list:  "french"
    )
 
 blueducktavern = Plug.create(
@@ -148,7 +149,7 @@ blueducktavern = Plug.create(
    surprise: "The apple pie. It's huge. You could eat it yourself if you're hungry, but it's best for two people to share.",
    tips: "expensive but so good.  Most of the dishes are so good but I would recommend the specials when they have them because they are unique.  They prefer reservations! Even if it's lunch hour.  You can reserve on their website.",
    url: "www.blueducktavern.com",
-   tags: Tag.where(name: ['american', 'modern'])
+   tag_list: "american', 'modern"
    )
 
 boqueria = Plug.create(
@@ -158,7 +159,7 @@ boqueria = Plug.create(
    surprise: "The bill.",
    tips: "Tapas are good. It's first come, first serve at the bar, but reservations are recommended for the seating area.",
    url: "www.boqueriarestaurant.com",
-   tags: Tag.where(name: ['tapas', 'spanish', 'seafood'])
+   tag_list: "tapas', 'spanish', 'seafood"
    )
 
 busboysandpoets = Plug.create(
@@ -168,7 +169,7 @@ busboysandpoets = Plug.create(
    surprise: "the bookstore",
    tips: "extremely vegan friendly, but the non-vegan dishes are tasty too!",
    url: "",
-   tags: Tag.where(name: 'vegan')
+   tag_list:  "vegan"
    )
 
 circadupont = Plug.create(
@@ -178,7 +179,7 @@ circadupont = Plug.create(
    surprise: "",
    tips: "they have a variety of seating; bar, tall tables, and regular seating. I've never seen it too crowded.",
    url: "",
-   tags: Tag.where(name: 'seafood')
+   tag_list:  "seafood"
    )
 
 commissary = Plug.create(
@@ -188,7 +189,7 @@ commissary = Plug.create(
    surprise: "The potato pancakes.",
    tips: "It's a nice large space with a lot of seating.  Good for decently sized crowds. Decent selection of beer at the bar. Free wifi! Portions are nicely sized",
    url: "",
-  tags: Tag.where(name: ['breakfast', 'brunch'])
+  tag_list: "breakfast', 'brunch"
    )
 
 daikaya = Plug.create(
@@ -198,7 +199,7 @@ daikaya = Plug.create(
     surprise: "There's a restaurant above it by the same owners and they sometimes have simple ramen dishes up there.  Less of a wait, more variety of japanese cuisine.",
     tips: "be prepared to wait! not good for large parties.",
     url: "",
-    tags: Tag.where(name: ['ramen', 'japanese'])
+    tag_list: "ramen', 'japanese"
     )
 
 districtcommons = Plug.create(
@@ -208,7 +209,7 @@ districtcommons = Plug.create(
    surprise: "Pretzel Baguette!",
    tips: "PRETZEL BAGUETTE",
    url: "",
-   tags: Tag.where(name: 'american')
+   tag_list:  "american"
    )
 
 eatonville = Plug.create(
@@ -218,7 +219,7 @@ eatonville = Plug.create(
    surprise: "",
    tips: "It's good for all meals of the day, and it get's crowded easily.",
    url: "www.eatonvillerestaurant.com",
-   tags: Tag.where(name: ['cajun', 'soulfood'])
+   tag_list: "cajun', 'soulfood"
    )
 
 filomena = Plug.create(
@@ -228,7 +229,7 @@ filomena = Plug.create(
    surprise: "You can watch one of the pasta makers make pasta from scratch through the window or inside.",
    tips: "Since the pasta is fresh, it's good. It's an old italian restaurant that's been there for a long time. ",
    url: "www.filomena.com",
-   tags: Tag.where(name: 'italian')
+   tag_list:  "italian"
    )
 
 fogo = Plug.create(
@@ -238,7 +239,7 @@ fogo = Plug.create(
    surprise: "Caipirinha - a craft cocktail and they'll make it in front of you so it's fresh. This is also a favorite.",
    tips: "go for the meat - not the sides or buffet. Don't eat anything prior, save your appetite! It's expensive so you should eat as much as you can. Great for a special occasion and big groups.",
    url: "",
-   tags: Tag.where(name: 'steakhouse')
+   tag_list:  "steakhouse"
    )
 
 foundingfarmers = Plug.create(
@@ -248,7 +249,7 @@ foundingfarmers = Plug.create(
     surprise: "Jefferson Donut",
     tips: "Ask to go upstairs because it's quieter.  Reservations, reservations, reservations.",
     url: "",
-    tags: Tag.where(name: ['american', 'brunch'])
+    tag_list: "american', 'brunch"'"
     )
 
 graffiato = Plug.create(
@@ -258,7 +259,7 @@ graffiato = Plug.create(
   surprise: "The breakfast pizza. It's decently sized to share between three people (if you're sharing other things as well).",
   tips: "I love going there for brunch, but they have really good italian dishes, tapas style.",
   url: "",
-  tags: Tag.where(name: ['tapas', 'italian', 'brunch'])
+  tag_list: "tapas', 'italian', 'brunch"
   )
 
 thehamilton = Plug.create(
@@ -268,7 +269,7 @@ thehamilton = Plug.create(
   surprise: "Warm Almond Fudge Brownie",
   tips: "It's also a music venue -- go here before a show. There's a big bar in the front and a lot of seating in the back. I think the best are the booths.",
   url: "",
-  tags: Tag.where(name: ['music', 'booze', 'american'])
+  tag_list: "music', 'booze', 'american"
   )
 
 jaleo = Plug.create(
@@ -278,7 +279,7 @@ jaleo = Plug.create(
   surprise: "the price.",
   tips: "Food is decent, but I think it is overpriced",
   url: "",
-  tags: Tag.where(name: 'tapas')
+  tag_list: "tapas"
   )
 
 marivanna = Plug.create(
@@ -288,7 +289,7 @@ marivanna = Plug.create(
    surprise: "the infused vodka cocktails",
    tips: "It's not too big so reservations might be a good idea.",
    url: "www.marivanna.ru",
-   tags: Tag.where(name: 'russian')
+   tag_list:  "russian"
    )
 
 matchbox = Plug.create(
@@ -298,7 +299,7 @@ matchbox = Plug.create(
    surprise: "decent cocktails.",
    tips: "Their appetizers are so large you could eat it as a meal. THey are known for their pizza but I like to order the appetizers.",
    url: "",
-   tags: Tag.where(name: 'pizza')
+   tag_list:  "pizza"
    )
 
 # logantavern = Plug.create(
@@ -317,7 +318,7 @@ mandu = Plug.create(
    surprise: "Pa Jeon, a seafood pancake. It's flavored well and has a lot of seafood.",
    tips: "there's not many korean restaurants in the district but this is a good one for a taste of korean food. There is also a location on K St.",
    url: "www.mandudc.com",
-   tags: Tag.where(name: 'korean')
+   tag_list:  "korean"
    )
 
 oldebbitt = Plug.create(
@@ -327,7 +328,7 @@ oldebbitt = Plug.create(
    surprise: "",
    tips: "it's a nice Asmerican bar place, it has that very old fashioned traditional architecture inside.  It can get really crowded. Decently sized portions. Mussels are popular here",
    url: "www.ebbitt.com",
-   tags: Tag.where(name: 'american')
+   tag_list:  "american"
    )
 
 pearldive = Plug.create(
@@ -337,7 +338,7 @@ pearldive = Plug.create(
    surprise: "",
    tips: "It gets really crowded.",
    url: "www.pearldivedc.com",
-   tags: Tag.where(name: 'seafood')
+   tag_list:  "seafood"
    )
 
 satelliteroom = Plug.create(
@@ -347,7 +348,7 @@ satelliteroom = Plug.create(
     surprise: "boozy milkshakes!",
     tips: "pregame here before a show at 930 club.  You can get a side dish as a meal for less than $10.",
     url: "",
-    tags: Tag.where(name: ['booze', 'sweets', 'american', 'music', 'milkshakes'])
+    tag_list: "booze,sweets,american,music,milkshakes"
     )
 
 sei = Plug.create(
@@ -357,7 +358,7 @@ sei = Plug.create(
     surprise: "",
     tips: "it's modern and expensive. Bring money.",
     url: "www.seirestaurant.com",
-    tags: Tag.where(name: ['japanese', 'sushi'])
+    tag_list: "japanese,sushi"
     )
 
 
@@ -368,7 +369,7 @@ shakeshack18nw= Plug.create(
    surprise: "",
    tips: "",
    url: "www.shakeshack.com",
-   tags: Tag.where(name: 'burgers')
+   tag_list:  "burgers"
    )
 
 shakeshackse = Plug.create(
@@ -378,7 +379,7 @@ shakeshackse = Plug.create(
   surprise: "",
   tips: "",
   url: "www.shakeshack.com",
-  tags: Tag.where(name: 'burgers')
+  tag_list: "burgers"
   )
 
 shakeshackfnw = Plug.create(
@@ -388,7 +389,7 @@ shakeshackfnw = Plug.create(
   surprise: "",
   tips: "this location is a tourist attraction because of the proximity to the museum and Verizon Center.",
   url: "www.shakeshack.com",
-  tags: Tag.where(name: 'burgers')
+  tag_list: "burgers"
   )
 
 stickyrice = Plug.create(
@@ -398,7 +399,7 @@ stickyrice = Plug.create(
    surprise: "Get the G-Damn Cheesecake. It is AMAZING!",
    tips: "They prefer reservations, if not, you'll sit at the bar area. They aren't really big on customizing dishes.",
    url: "www.stickyricedc.com",
-   tags: Tag.where(name: ['asian', 'sweets'])
+   tag_list: "asian,sweets"
    )
 
 teaism = Plug.create(
@@ -408,7 +409,7 @@ teaism = Plug.create(
    surprise: "",
    tips: "they have a great selection of food. they are vegetarian friendly with vegetarian  and vegan dishes.  they have seating upstairs as well. no internet. I heard the chicken curry is good.",
    url: "www.teaism.com",
-   tags: Tag.where(name: ['seafood', 'vegetarian', 'vegan'])
+   tag_list: "seafood,vegetarian,vegan"
    )
 
 tedsbulletin = Plug.create(
@@ -418,7 +419,7 @@ tedsbulletin = Plug.create(
    surprise: "The key lime poptart when they have it in season. It's so good.",
    tips: "Get the poptarts. This is the original location. There's usually a long wait during brunch. If you actually want a meal, I recommend the Big Mark Breakfast, because it comes with a poptart. You can have your poptart heated up for you, too. They serve breakfast all day.  They also have boozy milkshakes.",
    url: "www.tedsbulletincapitolhill.com",
-   tags: Tag.where(name: ['burgers', 'american', 'barrestaurant', 'booze', 'milkshakes'])
+   tag_list: "burgers,american,barrestaurant,booze,milkshakes"
    )
 
 thaixing = Plug.create(
@@ -428,7 +429,7 @@ thaixing = Plug.create(
    surprise: "",
    tips: "Reservations recommended. They serve a prix-fixe 5-7 course menu that changes daily. It's in a house building so the seating is a bit awkward. It's also vegan-friendly.",
    url: "www.thaix-ing.com",
-   tags: Tag.where(name: ['thai', 'vegan', 'vegetarian'])
+   tag_list: "thai,vegan,vegetarian"
    )
 
 thediner = Plug.create(
@@ -438,7 +439,7 @@ thediner = Plug.create(
    surprise: "",
    tips: '',
    url: "www.dinerdc.com",
-   tags: Tag.where(name: ['diner', 'american', 'brunch', 'milkshakes'])
+   tag_list: "diner,american,brunch,milkshakes"
    )
 
 thepig = Plug.create(
@@ -448,7 +449,7 @@ thepig = Plug.create(
     surprise: "Mac and Cheese Truffle Crust",
     tips: "Order anything with the word 'pig' in it.",
     url: "www.thepigdc.com",
-    tags: Tag.where(name: ['american', 'bbq'])
+    tag_list: "american,bbq"
     )
 
 toki = Plug.create(
@@ -458,7 +459,7 @@ toki = Plug.create(
     surprise: "The Miso Chocolate Chip Cookies with Milk",
     tips: "They open at 5 -- get there early to get your name down. Wait can typically be an hour - three hours long.",
     url: "www.tokiunderground.com",
-    tags: Tag.where(name: ['ramen', 'japanese', 'asian'])
+    tag_list: "ramen,japanese,asian"
     )
 
 tryst = Plug.create(
@@ -468,5 +469,5 @@ tryst = Plug.create(
    surprise: "If you get a coffee beverage you get a couple of animal crackers.",
    tips: "Always crowded because people work here on their laptops. Vegetarian-friendly.",
    url: "www.trystdc.com",
-   tags: Tag.where(name: ['cafe', 'vegetarian'])
+   tag_list: "cafe,vegetarian"
    )
