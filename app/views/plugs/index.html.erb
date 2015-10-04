@@ -11,7 +11,7 @@
 <div class="tagbox">
   <% @tags.each do |tag| %>
   <div class="tagnames">
-    <%= link_to tag.name, tag_path(tag) %>
+    <%= link_to tag.name, tag_path(tag.name) %>
   </div>
   <% end %>
 </div>
