@@ -1,13 +1,49 @@
-<div class="heading">You want: <%=@tag %> ! <span class="back"></div>
-<div class="tagshow">
-  <% @plugs.each do |plug| %>
-    <p class="tagPlugs">
-      <%= link_to plug.restaurant, plug %>
-    </p>
-  <% end %>
+<div class="heading">
+  <h2>there are <%= @plugs.count %> results for <%= @tag %>!</h2>
+  <span class="back">(or go <%= link_to "back", plugs_path %>)</span>
+</div>
 
-  <p class="back">
-    <%= link_to "Home", plugs_path %>
-  </p>
+<div class="tagshow">
+
+
+<% @plugs.each do |plug| %>
+  <div class="eachPlug">
+    <h2 id="tagRestaurant">
+      <%= plug.restaurant %>
+    </h2>
+
+    <p class="plugTags">
+      <%= plug.tag_list %>
+    </p>
+
+    <p class="plugSection"> Silvia's favorite dish</p>
+    <p class="plugInfo"><%= plug.favorite %></p>
+
+    <% if plug.surprise == "" %>
+    <% else %>
+      <p class="plugSection">and...</p>
+      <p class="plugInfo"><%= plug.surprise %> </p>
+    <% end %>
+
+    <% if plug.tips == "" %>
+    <% else %>
+      <p class="plugSection">Tip</p>
+      <p class="plugInfo"> <%= plug.tips %> </p>
+    <% end %>
+
+    <p class="plugSection">Location</p>
+    <p class="plugInfo"><%= plug.address %></p>
+
+    <% if plug.url == "" %>
+    <% else %>
+      <p class="plugSection">Website</p>
+      <p class="plugInfo"><%= plug.url %> </p>
+    <% end %>
+  </div>
+<% end %>
+
+<p class="back">
+  <%= link_to "Home", plugs_path %>
+</p>
 
 </div>
